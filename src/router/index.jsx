@@ -5,7 +5,7 @@ import { LoginPage } from "../auth";
 
 export const router = createBrowserRouter([
     {
-        path: "/*",
+        path: "/",
         element: <LayoutHeroes />,
         children: [
             {
@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
         element: <LoginPage />
     },
     {
-        path: "/",
+        path: "/*",
         element: <Navigate to="marvel" />
     },
 ])
