@@ -9,30 +9,33 @@ export const router = createBrowserRouter([
         element: <LayoutHeroes />,
         children: [
             {
-                path: "/marvel",
-                index: true,
+                path: "marvel",
                 element: <MarvelPage />,
             },
             {
-                path: "/dc",
+                path: "dc",
                 element: <DcPage />
             },
             {
-                path: "/search",
+                path: "search",
                 element: <SearchPage />
             },
             {
-                path: "/hero/:id",
+                path: "hero/:id",
                 element: <HeroPage />
             },
         ]
     },
     {
-        path: "/login",
+        path: "login",
         element: <LoginPage />
     },
     {
-        path: "/*",
+        path: "*",
+        element: <Navigate to="/marvel" />
+    },
+    {
+        path: "/",
         element: <Navigate to="/marvel" />
     },
 ])
