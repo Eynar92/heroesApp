@@ -7,10 +7,10 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <LayoutHeroes />,
-        index: true,
         children: [
             {
                 path: "marvel",
+                index: true,
                 element: <MarvelPage />,
             },
             {
