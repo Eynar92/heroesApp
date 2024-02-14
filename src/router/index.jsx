@@ -32,6 +32,6 @@ export const router = createBrowserRouter([
     },
     {
         path: "/*",
-        element: <Navigate to="marvel" />
+        element: <Navigate to="/marvel" />
     },
 ])
