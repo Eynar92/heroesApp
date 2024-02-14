@@ -10,6 +10,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/marvel",
+                index: true,
                 element: <MarvelPage />,
             },
             {
