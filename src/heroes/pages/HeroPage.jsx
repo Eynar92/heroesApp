@@ -18,7 +18,7 @@ export const HeroPage = () => {
   }
 
   return (
-    <main className="container mt-5 row">
+    <div className="container mt-5 row">
       <div className="col-4">
         <img
           src={`/assets/heroes/${id}.jpg`}
@@ -45,6 +45,6 @@ export const HeroPage = () => {
           Back
         </button>
       </div>
-    </main>
+    </div>
   )
 }
